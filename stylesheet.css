@@ -150,6 +150,15 @@ header {
   font-weight: normal;
 }
 
+.title {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+  font-weight: normal;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
 .lesson {
   float: left;
   width: 25%;
