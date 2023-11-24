@@ -1,3 +1,5 @@
 # chri2tine.github.io
 
-This is my personal website and is still a major WIP. I hope to finish this before the end of 2023 lol, but we'll see if that happens...
+Go to this link to see my personal website (still a major WIP).
+
+I hope to finish this before the end of 2023 lol (and add legit content to it), but we'll see if that happens with all the coursework...
