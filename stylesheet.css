@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   font-family: "Lucida Grande";
@@ -85,17 +86,26 @@ a {
   background-color: #55acee;
 }
 
+.github {
+  background-color: #55acee;
+}
+
 .btn {
   padding: 12px 24px;
   color: white;
   display: inline-block;
-  opacity: 0.8;
+  opacity: 0.7;
   border-radius: 4px;
   text-align: center;
+
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
 }
 
 .btn:hover {
   opacity: 1;
+  transform: translateY(-10px);
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
 }
 
 .fa {
@@ -105,7 +115,7 @@ a {
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(36, 108, 156, 0.9);
+  background-color: white;
   position :fixed;
   top: 0;
   z-index: 10;
@@ -128,25 +138,32 @@ header {
 .header-right a {
   line-height: 65px;
   padding: 0 25px;
-  color: white;
+  color: #5f5d60;
   display: block;
   float: left;
   transition: all 0.5s;
+  border-left: .5px solid #5f5d60;
+  border-right: .5px solid #5f5d60;
 }
 
 .header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
+}
+
+.header-right a:not(:last-child) {
+  border-right: none;
 }
 
 .menu-icon{
-  color: white;
+  color: #5f5d60;
   float: right;
   font-size: 25px;
   padding: 21px 0;
   display: none;
 }
 
-.lesson-wrapper {
+.general-wrapper {
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
@@ -163,6 +180,55 @@ header {
 .heading h2 {
   font-weight: normal;
 }
+
+
+/* Animations */
+
+@keyframes slideLeft{
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide {
+  animation: slideLeft 1s ease-in 1s;
+}
+
+/* Contact Form */
+form {
+  display: grid;
+  grid-gap: 20px;
+  text-align: justify;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #b3aeb5;
+  color: #fff;
+  padding: 10px 15px;
+  border: .5px solid #000;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2c3e50;
+  color: #fff;
+  border-color: #fff;
+}
+
 
 .title {
   padding-top: 80px;
@@ -208,11 +274,12 @@ header {
   text-align: center;
 }
 
-.message {
+.message a {
   padding: 15px 40px;
   background-color: #89c7df;
+  color: white;
   cursor: pointer;
-  box-shadow: 0 7px #1a5079;
+  border: .5px solid #5f5d60;
 }
 
 .message:active {
@@ -233,4 +300,55 @@ footer p {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+body {
+  background-color:white;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blue(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blue(0);
+  transform: translateX(0);
+}
+
+.item {
+  display: flex;
+}
+
+.item:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.item:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.item:nth-child(4) {
+  transition-delay: 600ms;
 }
