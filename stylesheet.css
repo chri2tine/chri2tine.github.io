@@ -7,6 +7,14 @@ body {
   font-family: "Lucida Grande";
 }
 
+.italic {
+  font-style: italic;
+}
+
+.emoji-presentation {
+  font-variant-emoji: emoji;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,8 +30,8 @@ a {
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  padding: 120px 0 50px 0;
+  background-image: url(sky.png);
   background-size: cover;
   color: white;
   text-align: center;
@@ -83,14 +91,14 @@ a {
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
+  background-color: rgba(36, 108, 156, 0.9);
   position :fixed;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  width: 124px;
+  width: 70px;
   margin-top: 20px;
 }
 
@@ -159,10 +167,10 @@ header {
 }
 
 .text-contents {
-  width: 80%;
+  width: 90%;
   display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
+  margin-top: 0px;
+  font-size: 20px;
   color: #b3aeb5;
 }
 
@@ -178,9 +186,9 @@ header {
 
 .message {
   padding: 15px 40px;
-  background-color: #5dca88;
+  background-color: #89c7df;
   cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+  box-shadow: 0 7px #1a5079;
 }
 
 .message:active {
