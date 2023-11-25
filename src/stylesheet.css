@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: "Lucida Grande";
+  font-family:'Times New Roman', Times, serif;
 }
 
 .italic {
@@ -14,6 +14,7 @@ body {
 
 .emoji-presentation {
   font-variant-emoji: emoji;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 a {
@@ -32,7 +33,7 @@ a {
 
 .top-wrapper {
   padding: 120px 0 50px 0;
-  background-image: url(sky.png);
+  background-image: url(./backgrounds/sky.png);
   background-size: cover;
   color: white;
   text-align: center;
@@ -50,6 +51,11 @@ a {
   height: 300px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.resized-image2 {
+  width: 210px;
+  height: 300px;
 }
 
 .top-wrapper h1 {
@@ -119,6 +125,7 @@ header {
   position :fixed;
   top: 0;
   z-index: 10;
+  font-family: 'Times New Roman', Times, serif';
 }
 
 .logo {
@@ -144,6 +151,7 @@ header {
   transition: all 0.5s;
   border-left: .5px solid #5f5d60;
   border-right: .5px solid #5f5d60;
+  font-family: 'Times New Roman', Times, serif';
 }
 
 .header-right a:hover {
@@ -175,10 +183,12 @@ header {
   padding-top: 80px;
   padding-bottom: 50px;
   color: #5f5d60;
+  font-family: 'Times New Roman', Times, serif';
 }
 
 .heading h2 {
   font-weight: normal;
+  font-family:'Times New Roman', Times, serif;
 }
 
 
@@ -219,6 +229,7 @@ button {
   color: #fff;
   padding: 10px 15px;
   border: .5px solid #000;
+  font-family: 'Times New Roman', Times, serif;
 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -237,6 +248,7 @@ button:hover {
   font-weight: normal;
   font-size: 45px;
   letter-spacing: 5px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .lesson {
@@ -262,10 +274,12 @@ button:hover {
   font-size: 20px;
   color: #b3aeb5;
   margin-bottom: 50px;
+  font-family: 'Times New Roman', Times, serif';
 }
 
 .heading h3 {
   font-weight: normal;
+  font-family: 'Times New Roman', Times, serif';
 }
 
 .message-wrapper {
@@ -280,6 +294,7 @@ button:hover {
   color: white;
   cursor: pointer;
   border: .5px solid #5f5d60;
+  font-family: 'Times New Roman', Times, serif';
 }
 
 .message:active {
@@ -305,7 +320,7 @@ footer {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 body {
   background-color:white;
-  font-family: 'Poppins', sans-serif;
+  font-family:'Times New Roman', Times, serif;
   padding: 0;
   margin: 0;
 }
