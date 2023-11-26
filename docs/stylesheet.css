@@ -12,8 +12,26 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
+.emoji-presentation::after {
+  text-align: center;
+  display: inline-block;
+}
+
 a {
   text-decoration: none;
+}
+
+header-right a.github a.linkedin {
+  display: flex;
+  align-items: center;
+}
+
+header-right a.github a.linkedin i {
+  margin-right: 0.5em;
+}
+
+header-right a.github:hover a.linkedin:hover {
+  background-color: #00548F;
 }
 
 
@@ -78,10 +96,6 @@ a {
 }
 
 .twitter {
-  background-color: #55acee;
-}
-
-.github {
   background-color: #55acee;
 }
 
@@ -261,8 +275,9 @@ label {
 
 input, textarea {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 button {
@@ -347,11 +362,15 @@ button:hover {
 
 footer img {
   width: 125px;
+  vertical-align: middle;
 }
 
 footer p {
   color: #b3aeb5;
   font-size: 12px;
+  white-space: nowrap;
+  text-align: justify;
+  display: inline-block;
 }
 
 footer {
