@@ -16,6 +16,7 @@ a {
   text-decoration: none;
 }
 
+
 .clear {
   clear: left;
 }
@@ -67,15 +68,6 @@ a {
   margin-bottom: 3px;
 }
 
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
 .signup {
   background-color: #239b76;
 }
@@ -94,7 +86,7 @@ a {
 }
 
 .btn {
-  padding: 12px 24px;
+  padding: 25px 24px;
   color: white;
   display: inline-block;
   opacity: 0.7;
@@ -104,11 +96,17 @@ a {
   transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
 }
 
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .btn:hover {
   opacity: 1;
   transform: translateY(-10px);
-  background-color: var(--clr-accent);
+  background-color: var(--clr-background);
   color: var(--clr-light);
+  border-radius: 4px;
 }
 
 .fa {
@@ -152,12 +150,17 @@ header {
 }
 
 .header-right a:hover {
-  background-color: var(--clr-accent);
-  color: var(--clr-light);
+  background-color: pink;
+  color: white;
 }
 
 .header-right a:not(:last-child) {
   border-right: none;
+}
+
+.header-right a.active {
+  background-color: #ccc;
+  color: white;
 }
 
 .menu-icon{
