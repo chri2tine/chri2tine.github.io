@@ -30,10 +30,6 @@ header-right a.github a.linkedin i {
   margin-right: 0.5em;
 }
 
-header-right a.github:hover a.linkedin:hover {
-  background-color: #00548F;
-}
-
 
 .clear {
   clear: left;
@@ -305,22 +301,6 @@ button:hover {
   font-size: 45px;
   letter-spacing: 5px;
   font-family: 'Times New Roman', Times, serif;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
 }
 
 .text-contents {
